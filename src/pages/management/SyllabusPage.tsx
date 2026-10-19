@@ -108,7 +108,9 @@ export function SyllabusPage() {
       teacherId: formData.teacherId,
       topicName: formData.topicName,
       scheduledDate: formData.scheduledDate,
+      completedDate: null,
       status: 'pending',
+      priority: 'medium',
       notes: formData.notes,
     };
     addTeachingPlans([newPlan]);

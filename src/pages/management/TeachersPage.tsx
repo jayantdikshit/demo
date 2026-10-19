@@ -15,6 +15,7 @@ import {
   CheckCircle2,
   TrendingUp,
   AlertCircle,
+  AlertTriangle,
   Eye,
   Mail,
   Phone,
