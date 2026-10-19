@@ -1,0 +1,55 @@
+import type { WebsiteContent } from '@/types';
+
+export const websiteContentData: WebsiteContent[] = [
+  {
+    schoolId: 'school-001',
+    heroTitle: 'Welcome to Vidya Public School',
+    heroSubtitle: 'Nurturing Minds, Building Futures — Established 1995',
+    heroImage: '',
+    aboutText: 'Vidya Public School, established in 1995, is one of the premier educational institutions in Noida. With over 25 years of academic excellence, we have been nurturing young minds and building future leaders. Our school follows the CBSE curriculum and offers a holistic approach to education that balances academics with sports, arts, and character development. We are proud of our 98% board exam pass rate and numerous national-level achievements in science, mathematics, and sports.',
+    principalPhoto: '',
+    principalMessage: 'Dear Parents and Students, at Vidya Public School, we believe that every child is unique and has the potential to achieve greatness. Our dedicated faculty, modern infrastructure, and comprehensive curriculum ensure that students receive the best possible education. We focus not just on academic excellence but also on building character, leadership skills, and social responsibility. I invite you to be part of our growing family. — Dr. Sunita Sharma, Principal',
+    notices: [
+      { id: 'notice-001', title: 'Annual Day Celebration 2026', content: 'Annual Day will be celebrated on October 15, 2026 at the school auditorium. All students are required to participate. Rehearsals begin September 20.', date: '2026-09-05', isPublished: true },
+      { id: 'notice-002', title: 'Parent-Teacher Meeting', content: 'PTM for all classes will be held on September 20, 2026 (Saturday) from 10:00 AM to 1:00 PM. Parents are requested to attend without fail.', date: '2026-09-04', isPublished: true },
+      { id: 'notice-003', title: 'Holiday Notice — Gandhi Jayanti', content: 'School will remain closed on October 2, 2026 on account of Gandhi Jayanti.', date: '2026-09-01', isPublished: true },
+      { id: 'notice-004', title: 'Science Exhibition', content: 'Inter-house Science Exhibition will be held on October 25, 2026. Students of Class 6-10 can participate. Registration open till October 10.', date: '2026-08-28', isPublished: true },
+      { id: 'notice-005', title: 'Fee Reminder', content: 'Parents are requested to clear pending Term 1 fees by September 30, 2026. Late fee of ₹500 will be applicable after the due date.', date: '2026-09-08', isPublished: true },
+    ],
+    events: [
+      { id: 'event-001', title: 'Annual Day 2026', description: 'Grand annual day celebration with cultural performances, prize distribution, and chief guest address.', date: '2026-10-15', time: '5:00 PM', venue: 'School Auditorium', isPublished: true, type: 'upcoming' },
+      { id: 'event-002', title: 'Science Exhibition', description: 'Inter-house Science Exhibition — Working models, projects, and innovation showcase.', date: '2026-10-25', time: '10:00 AM', venue: 'School Hall', isPublished: true, type: 'upcoming' },
+      { id: 'event-003', title: 'Sports Day 2026', description: 'Annual sports day with track & field events, team sports, and march past.', date: '2026-11-20', time: '8:00 AM', venue: 'School Ground', isPublished: true, type: 'upcoming' },
+      { id: 'event-004', title: 'Independence Day Celebration', description: 'Flag hoisting, cultural program, and patriotic song competition.', date: '2026-08-15', time: '8:00 AM', venue: 'School Ground', isPublished: true, type: 'past' },
+      { id: 'event-005', title: 'Teacher\'s Day', description: 'Students organized special assembly and cultural program for teachers.', date: '2026-09-05', time: '9:00 AM', venue: 'School Auditorium', isPublished: true, type: 'past' },
+    ],
+    achievements: [
+      { id: 'ach-001', title: 'Board Exam Toppers', description: 'Vidya Public School students secured 5 positions in district top 10 in CBSE Class 10 Board Exams 2025.', year: '2025', category: 'Academic' },
+      { id: 'ach-002', title: 'National Science Olympiad', description: 'Three students qualified for National Science Olympiad finals.', year: '2025', category: 'Competition' },
+      { id: 'ach-003', title: 'State Level Cricket Champions', description: 'School cricket team won the UP State Inter-School Cricket Championship.', year: '2025', category: 'Sports' },
+      { id: 'ach-004', title: 'Best School Award', description: 'Awarded "Best CBSE School in Noida" by Education Times.', year: '2024', category: 'Recognition' },
+    ],
+    galleryImages: [],
+    admissionInfo: 'Admissions for the academic year 2027-28 are open for classes Nursery to Class 9. The admission process includes a written assessment and parent interaction. Registration forms are available at the school office and on our website.',
+    admissionProcess: [
+      'Download and fill the registration form',
+      'Submit with required documents and registration fee',
+      'Written assessment for Class 1 and above',
+      'Parent interaction with the Principal',
+      'Result declaration within 7 working days',
+      'Fee payment and admission confirmation',
+    ],
+    contactAddress: '123 Education Lane, Sector 15, Noida, Uttar Pradesh 201301',
+    contactPhone: '+91 120 4567890',
+    contactEmail: 'info@vidyapublicschool.edu.in',
+    mapUrl: 'https://maps.google.com/?q=28.5355,77.3910',
+    facilities: [
+      { id: 'fac-001', name: 'Smart Classrooms', description: 'All classrooms equipped with interactive smart boards and projectors.', icon: 'Monitor' },
+      { id: 'fac-002', name: 'Science Labs', description: 'Well-equipped Physics, Chemistry, and Biology laboratories.', icon: 'FlaskConical' },
+      { id: 'fac-003', name: 'Computer Lab', description: 'Modern computer lab with 40 latest systems and high-speed internet.', icon: 'Laptop' },
+      { id: 'fac-004', name: 'Library', description: 'Library with 10,000+ books, journals, and digital reading resources.', icon: 'BookOpen' },
+      { id: 'fac-005', name: 'Sports Complex', description: 'Cricket ground, basketball court, indoor badminton, and swimming pool.', icon: 'Trophy' },
+      { id: 'fac-006', name: 'Transport', description: 'GPS-tracked school buses covering all major areas in Noida.', icon: 'Bus' },
+    ],
+  },
+];

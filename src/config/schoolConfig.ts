@@ -1,0 +1,88 @@
+import type { SchoolConfig } from '@/types';
+
+export const schoolConfigs: SchoolConfig[] = [
+  {
+    schoolId: 'school-001',
+    slug: 'vps',
+    name: 'Vidya Public School',
+    shortName: 'VPS',
+    logo: '🏫',
+    primaryColor: '#1e40af',
+    secondaryColor: '#3b82f6',
+    accentColor: '#60a5fa',
+    attendanceThreshold: 75,
+    marksThreshold: 35,
+    feeStructure: [
+      { id: 'fee-s1-t1', schoolId: 'school-001', classId: 'cls-6', termName: 'Term 1', amount: 25000, dueDate: '2026-04-15', description: 'Tuition + Lab + Library' },
+      { id: 'fee-s1-t2', schoolId: 'school-001', classId: 'cls-6', termName: 'Term 2', amount: 25000, dueDate: '2026-10-15', description: 'Tuition + Lab + Library' },
+      { id: 'fee-s1-t3', schoolId: 'school-001', classId: 'cls-7', termName: 'Term 1', amount: 27000, dueDate: '2026-04-15', description: 'Tuition + Lab + Library' },
+      { id: 'fee-s1-t4', schoolId: 'school-001', classId: 'cls-7', termName: 'Term 2', amount: 27000, dueDate: '2026-10-15', description: 'Tuition + Lab + Library' },
+      { id: 'fee-s1-t5', schoolId: 'school-001', classId: 'cls-8', termName: 'Term 1', amount: 28000, dueDate: '2026-04-15', description: 'Tuition + Lab + Library' },
+      { id: 'fee-s1-t6', schoolId: 'school-001', classId: 'cls-8', termName: 'Term 2', amount: 28000, dueDate: '2026-10-15', description: 'Tuition + Lab + Library' },
+      { id: 'fee-s1-t7', schoolId: 'school-001', classId: 'cls-9', termName: 'Term 1', amount: 30000, dueDate: '2026-04-15', description: 'Tuition + Lab + Library + Sports' },
+      { id: 'fee-s1-t8', schoolId: 'school-001', classId: 'cls-9', termName: 'Term 2', amount: 30000, dueDate: '2026-10-15', description: 'Tuition + Lab + Library + Sports' },
+      { id: 'fee-s1-t9', schoolId: 'school-001', classId: 'cls-10', termName: 'Term 1', amount: 32000, dueDate: '2026-04-15', description: 'Tuition + Lab + Library + Sports + Board Exam' },
+      { id: 'fee-s1-t10', schoolId: 'school-001', classId: 'cls-10', termName: 'Term 2', amount: 32000, dueDate: '2026-10-15', description: 'Tuition + Lab + Library + Sports + Board Exam' },
+    ],
+    featureFlags: {
+      aiAssistant: true,
+      publicWebsite: true,
+      parentCommunication: true,
+      onlinePayment: true,
+      teacherFeedback: true,
+      complaintSystem: true,
+      interventionTracking: true,
+    },
+    domain: 'vidyapublicschool.edu.in',
+    address: '123 Education Lane, Sector 15, Noida, Uttar Pradesh 201301',
+    phone: '+91 120 4567890',
+    email: 'info@vidyapublicschool.edu.in',
+    principalName: 'Dr. Sunita Sharma',
+    principalMessage: 'At Vidya Public School, we believe in nurturing minds and building character. Our holistic approach to education ensures every child discovers their unique potential.',
+    tagline: 'Nurturing Minds, Building Futures',
+    establishedYear: 1995,
+  },
+  {
+    schoolId: 'school-002',
+    slug: 'sia',
+    name: 'Sunrise International Academy',
+    shortName: 'SIA',
+    logo: '🌅',
+    primaryColor: '#166534',
+    secondaryColor: '#22c55e',
+    accentColor: '#86efac',
+    attendanceThreshold: 80,
+    marksThreshold: 40,
+    feeStructure: [
+      { id: 'fee-s2-t1', schoolId: 'school-002', classId: 'cls-6', termName: 'Term 1', amount: 35000, dueDate: '2026-04-15', description: 'Tuition + Lab + AC + Library' },
+      { id: 'fee-s2-t2', schoolId: 'school-002', classId: 'cls-6', termName: 'Term 2', amount: 35000, dueDate: '2026-10-15', description: 'Tuition + Lab + AC + Library' },
+      { id: 'fee-s2-t3', schoolId: 'school-002', classId: 'cls-7', termName: 'Term 1', amount: 38000, dueDate: '2026-04-15', description: 'Tuition + Lab + AC + Library' },
+      { id: 'fee-s2-t4', schoolId: 'school-002', classId: 'cls-7', termName: 'Term 2', amount: 38000, dueDate: '2026-10-15', description: 'Tuition + Lab + AC + Library' },
+      { id: 'fee-s2-t5', schoolId: 'school-002', classId: 'cls-8', termName: 'Term 1', amount: 40000, dueDate: '2026-04-15', description: 'Tuition + Lab + AC + Library + Sports' },
+      { id: 'fee-s2-t6', schoolId: 'school-002', classId: 'cls-8', termName: 'Term 2', amount: 40000, dueDate: '2026-10-15', description: 'Tuition + Lab + AC + Library + Sports' },
+    ],
+    featureFlags: {
+      aiAssistant: true,
+      publicWebsite: true,
+      parentCommunication: true,
+      onlinePayment: true,
+      teacherFeedback: true,
+      complaintSystem: true,
+      interventionTracking: true,
+    },
+    domain: 'sunriseacademy.edu.in',
+    address: '45 Knowledge Park III, Greater Noida, Uttar Pradesh 201310',
+    phone: '+91 120 9876543',
+    email: 'info@sunriseacademy.edu.in',
+    principalName: 'Mr. Rajesh Kumar Verma',
+    principalMessage: 'Sunrise International Academy stands at the intersection of tradition and innovation. We prepare students for a globalized world while keeping our cultural values intact.',
+    tagline: 'Where Excellence Meets Opportunity',
+    establishedYear: 2008,
+  },
+];
+
+export const getSchoolConfig = (schoolId: string): SchoolConfig => {
+  return schoolConfigs.find(s => s.schoolId === schoolId) || schoolConfigs[0];
+};
+
+export const defaultSchoolId = 'school-001';
